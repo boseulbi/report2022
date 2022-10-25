@@ -1,0 +1,28 @@
+* {
+    margin: 0px; padding: 0px; box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background: #efefef;
+}
+
+button {
+    background: none;
+    border:0;
+}
+
+table {
+    padding: 0;
+    border: 0;
+    border-spacing: 0px;
+    border-collapse: collapse ;
+}
+
+th, td {
+    padding: 0;
+}

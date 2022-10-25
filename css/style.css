@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #efefef;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+
+table {
+  padding: 0;
+  border: 0;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  position: relative;
+}
+
+main {
+  width: 100vw;
+  position: relative;
+}
+main header {
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header .logo {
+  width: 20vw;
+  height: 100%;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left, center;
+  cursor: pointer;
+}
+main header .navbar {
+  width: 6vw;
+  height: 45%;
+  background-image: url(../img/navbar.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right, center;
+  cursor: pointer;
+}
+main section {
+  width: 1253px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(250, 250, 250);
+  padding: 3vw;
+}
+main section .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(89, 90, 92);
+}
+main section .title h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  color: #777;
+  margin-bottom: 10px;
+}
+main section .title h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 0.7vw;
+  color: #888;
+  text-align: end;
+}
+main section article.contain {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main section article.contain .define {
+  width: 48.5%;
+}
+main section article.contain .define h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #444;
+  padding-top: 30px;
+}
+main section article.contain .define h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  color: #555;
+  padding-top: 30px;
+}
+main section article.contain .define p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #555;
+  padding-top: 20px;
+  line-height: 33px;
+  text-align: justify;
+  letter-spacing: -0.25px;
+}
+main section article.contain .define span p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #888;
+  padding-top: 30px;
+  line-height: 26px;
+}
+main section article.contain .box {
+  width: 48.5%;
+  background-color: rgb(237, 237, 237);
+}
+main section article.contain .box img {
+  width: 100%;
+  height: auto;
+  background-position: center center;
+}
+main section article.graph {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main section article.graph span .age {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #333;
+  padding-top: 60px;
+}
+main section article.graph span .age h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #555;
+  margin-bottom: 10px;
+}
+main section article.graph span img.pc {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-color: rgb(237, 237, 237);
+}
+main section article.graph span img.mobile {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-color: rgb(237, 237, 237);
+  display: none;
+}
+main section article.graph div {
+  width: 48.5%;
+}
+main section article.graph div .subtitle {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #333;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main section article.graph div .subtitle h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #555;
+  margin-bottom: 10px;
+}
+main section article.graph div .subtitle .btn_open {
+  width: 86px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: rgb(191, 191, 191);
+  background-image: url(../img/plus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(10px);
+}
+main section article.graph div .subimg {
+  width: 100%;
+  background-color: rgb(237, 237, 237);
+}
+main section article.graph div .subimg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main section article.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main section article.footer .footTitle {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #333;
+  margin-top: 40px;
+}
+main section article.footer .footTitle h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+main section article.footer .publishing {
+  width: 70%;
+  line-height: 24px;
+  margin-top: 10px;
+}
+main section article.footer .publishing th {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #555;
+  text-align: justify;
+}
+main section article.footer .publishing td {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #888;
+  text-align: justify;
+}
+main section article.footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+main section article.footer .copyright p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #555;
+  margin-top: 40px;
+  line-height: 21px;
+}
+main section article.footer .copyright img {
+  margin-top: 40px;
+}
+main section article.footer .publishingM {
+  display: none;
+}
+
+aside {
+  width: 1253px;
+  position: absolute;
+  left: 50.5%;
+  transform: translateX(-50%);
+  background-color: rgb(250, 250, 250);
+  padding: 3vw;
+}
+aside div.swipertitle {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+aside div.swipertitle h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #555;
+  margin-bottom: 10px;
+}
+aside div.swipertitle .btn_close {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(191, 191, 191);
+  background-image: url(../img/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(10px);
+}
+aside .swiper {
+  width: 100%;
+  height: auto;
+}
+aside .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+aside .swiper-button-next, aside .swiper-button-prev {
+  font-size: 10px;
+  color: #999;
+}
+aside div.area {
+  background: rgb(229, 241, 249);
+}
+aside div.residence {
+  background: rgb(254, 240, 235);
+}
+aside div.death {
+  background: rgb(254, 238, 238);
+}
+
+aside#pop_info_1 {
+  top: 2089px;
+}
+
+aside#pop_info_2 {
+  top: 2089px;
+}
+
+aside#pop_info_3 {
+  top: 2688px;
+}
+
+@media screen and (max-width: 1253px) {
+  main header {
+    height: 8vh;
+  }
+  main header div.logo {
+    width: 60vw;
+  }
+  main header div.navbar {
+    width: 15vw;
+  }
+  main section {
+    width: 100vw;
+    top: 10vh;
+    padding: 8vw;
+  }
+  main section article.contain .define {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  main section article.contain .define h1 {
+    font-size: 24px;
+  }
+  main section article.contain .define h2 {
+    font-size: 18px;
+  }
+  main section article.contain .define p {
+    font-size: 15px;
+  }
+  main section article.contain .define span p {
+    font-size: 5px;
+    line-height: 20px;
+  }
+  main section article.contain .box {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+  main section article.graph div {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  main section article.graph div .subtitle h1 {
+    font-size: 20px;
+  }
+  main section article.graph div .subtitle .btn_open {
+    transform: scale(0.7) translateY(5px);
+  }
+  main section article.graph span .age h1 {
+    font-size: 20px;
+  }
+  main section article.graph span img.pc {
+    display: none;
+  }
+  main section article.graph span img.mobile {
+    display: block;
+  }
+  main section article.footer .publishing {
+    display: none;
+  }
+  main section article.footer .publishingM {
+    display: block;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  main section article.footer .publishingM th {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555;
+    text-align: justify;
+  }
+  main section article.footer .publishingM td {
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #888;
+    text-align: justify;
+    padding-left: 15px;
+  }
+  aside {
+    width: 100vw;
+    padding: 8vw;
+  }
+  aside div.swipertitle h1 {
+    font-size: 20px;
+  }
+  aside div.swipertitle .btn_close {
+    transform: scale(0.7) translateY(10px);
+  }
+  aside .swiper-button-next, aside .swiper-button-prev, aside .swiper-pagination {
+    transform: scale(0.5);
+  }
+  aside#pop_info_1 {
+    top: 2612px;
+  }
+  aside#pop_info_2 {
+    top: 2612px;
+  }
+  aside#pop_info_3 {
+    top: 3347px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
